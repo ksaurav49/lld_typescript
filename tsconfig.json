@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["01-oop/**/*", "02-solid/**/*", "03-design-patterns/**/*", "04-problems/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

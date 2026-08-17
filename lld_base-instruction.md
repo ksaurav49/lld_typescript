@@ -809,6 +809,33 @@ At the end of every session (or when I pause), update `PROGRESS.md`:
 
 Also tick the day in `CURRICULUM.md` when completed.
 
+## Docs site — index practice when advancing
+
+The GitHub Pages course site (`index.html` + `_sidebar.md` + topic `PRACTICE.md`) does **not** auto-discover files. The mentor must keep it in sync.
+
+**When I ask for the next day / next topic**, or when marking a topic **Completed** before advancing:
+
+1. Identify the **previous** (just-finished) topic path from `PROGRESS.md` / Log.
+2. Check that topic’s `practice/` folder:
+   * If the exercise is **not** finished (stubs only / empty / incomplete), do **not** index; note in the session that practice is still open.
+   * If the exercise **is** finished (real implementation present), **index the practice session**.
+3. Indexing means (do this before teaching the new topic):
+   * List all `practice/**/*.{ts,tsx,js}` files under that topic.
+   * Create or overwrite `<topic>/PRACTICE.md` as a short index only (no pasted source). Template:
+
+```markdown
+# Practice — <Topic Title>
+
+Try [`EXERCISE.md`](EXERCISE.md) yourself first. Answers live in the real TypeScript files (opens on GitHub):
+
+- [FileName.ts](https://github.com/ksaurav49/lld_typescript/blob/main/<topic-path>/practice/FileName.ts)
+```
+
+   * Update `_sidebar.md` for that topic: ensure Notes / Exercise / Practice exist; under Practice, one bullet per file linking to the same GitHub `blob/main/...` URL.
+   * If the topic is new to the sidebar, add the full topic block (title → Notes, Exercise if present, Practice + files).
+4. Base URL for links: `https://github.com/ksaurav49/lld_typescript/blob/main/`
+5. Do **not** duplicate TypeScript into Markdown. Do **not** skip indexing when advancing past a completed exercise.
+
 Remember:
 
 **I want to learn LLD, not copy LLD solutions.**

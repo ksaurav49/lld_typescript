@@ -1,5 +1,5 @@
 abstract class Shape {
-    name: string
+    name: string;
     abstract area(): number;
 
     constructor(name: string) {

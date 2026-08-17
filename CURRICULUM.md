@@ -10,8 +10,8 @@ Track live position in [`PROGRESS.md`](./PROGRESS.md). Mark days done with `[x]`
 |-----|--------|------|------|
 | 1 | [Classes & Objects](./01-oop/classes/NOTES.md) | [`01-oop/classes/`](./01-oop/classes/NOTES.md) | [x] |
 | 2 | [Encapsulation & Access Modifiers](./01-oop/encapsulation/NOTES.md) | [`01-oop/encapsulation/`](./01-oop/encapsulation/NOTES.md) | [x] |
-| 3 | [Abstraction](./01-oop/abstraction/NOTES.md), [Interfaces](./01-oop/interfaces/NOTES.md), Abstract Classes | [`01-oop/abstraction/`](./01-oop/abstraction/NOTES.md) · [`01-oop/interfaces/`](./01-oop/interfaces/NOTES.md) | [ ] |
-| 4 | [Inheritance](./01-oop/inheritance/NOTES.md) & [Polymorphism](./01-oop/polymorphism/NOTES.md) | [`01-oop/inheritance/`](./01-oop/inheritance/NOTES.md) · [`01-oop/polymorphism/`](./01-oop/polymorphism/NOTES.md) | [ ] |
+| 3 | [Abstraction](./01-oop/abstraction/NOTES.md), [Interfaces](./01-oop/interfaces/NOTES.md), Abstract Classes | [`01-oop/abstraction/`](./01-oop/abstraction/NOTES.md) · [`01-oop/interfaces/`](./01-oop/interfaces/NOTES.md) | [x] |
+| 4 | [Inheritance](./01-oop/inheritance/NOTES.md) & [Polymorphism](./01-oop/polymorphism/NOTES.md) | [`01-oop/inheritance/`](./01-oop/inheritance/NOTES.md) · [`01-oop/polymorphism/`](./01-oop/polymorphism/NOTES.md) | [x] |
 | 5 | [Composition, Association, Aggregation](./01-oop/composition/NOTES.md) | [`01-oop/composition/`](./01-oop/composition/NOTES.md) | [ ] |
 
 ## Phase 2 — SOLID

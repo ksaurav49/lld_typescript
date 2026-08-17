@@ -1,0 +1,3 @@
+interface PaymentMethod {
+    pay(amount: number): void;
+}

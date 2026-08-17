@@ -38,6 +38,11 @@ function alertUser(notifier: Notifier): void {
 
 > "This lets us add a new implementation without changing code that depends on the interface."
 
+> "Checkout depends on PaymentMethod so we can add new payment types without changing checkout’s core logic."
+
 ## Pitfalls / Interview notes
 
-*(Filled after review.)*
+- Depend on `PaymentMethod` in checkout/orchestration — not on `CardPayment` / `UpiPayment` by name.
+- Good shape: interface + multiple `implements` + caller passes the concrete instance at the edge.
+- Validation duplicated in each `pay` is OK for Day 3; later you might share a helper or a small abstract base — don’t force it early.
+- Multi-file TS: once you use `import`/`export`, export the interface and classes so `checkout.ts` can import them cleanly.

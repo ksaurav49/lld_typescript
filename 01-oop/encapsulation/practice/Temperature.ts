@@ -38,4 +38,4 @@ class Temperature {
 const temperature = new Temperature(20);
 temperature.setFahrenheit(68);
 console.log(temperature.getCelsius());
-console.log(temperature.getFahrenheit);
+console.log(temperature.getFahrenheit());

@@ -15,11 +15,11 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 3 / 30
-Topic: Abstraction + Interfaces
-Path: 01-oop/interfaces/ (also read 01-oop/abstraction/NOTES.md)
+Day: 5 / 30
+Topic: Composition (has-a) vs inheritance
+Path: 01-oop/composition/
 Status: Not started
-Resume at: Read abstraction NOTES → interfaces NOTES → EXERCISE → practice/
+Resume at: Read NOTES.md → EXERCISE.md → practice/Computer.ts
 ```
 
 ---
@@ -27,19 +27,22 @@ Resume at: Read abstraction NOTES → interfaces NOTES → EXERCISE → practice
 ## Log
 
 ```text
-Day 2
-Topic: Encapsulation & Access Modifiers
-Path: 01-oop/encapsulation/
+Day 4
+Topic: Inheritance + Polymorphism
+Path: 01-oop/polymorphism/
 Status: Completed
-Confidence: 8.5/10
+Confidence: 9/10
 Weakness: —
-Notes: Temperature with private state, assertValidCelsius, consistent getters; clear encapsulation explanation
+Notes: Shape/Rectangle/Circle + PrintArea; polymorphism explanation refined
+
+Day 3
+Topic: Abstraction + Interfaces
+Status: Completed
+Confidence: 9/10
+
+Day 2
+Status: Completed
 
 Day 1
-Topic: Classes & Objects
-Path: 01-oop/classes/
 Status: Completed
-Confidence: 8/10
-Weakness: Constructor negative balance edge (minor)
-Notes: BankAccount + class/object and state/behavior solid
 ```

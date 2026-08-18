@@ -15,11 +15,11 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 5 / 30
-Topic: Composition (has-a) vs inheritance
-Path: 01-oop/composition/
+Day: 6 / 30
+Topic: SOLID — Single Responsibility Principle
+Path: 02-solid/single-responsibility/
 Status: Not started
-Resume at: Read NOTES.md → EXERCISE.md → practice/Computer.ts
+Resume at: Read NOTES.md → EXERCISE.md → practice/
 ```
 
 ---
@@ -27,22 +27,16 @@ Resume at: Read NOTES.md → EXERCISE.md → practice/Computer.ts
 ## Log
 
 ```text
-Day 4
-Topic: Inheritance + Polymorphism
-Path: 01-oop/polymorphism/
+Day 5
+Topic: Composition
+Path: 01-oop/composition/
 Status: Completed
-Confidence: 9/10
-Weakness: —
-Notes: Shape/Rectangle/Circle + PrintArea; polymorphism explanation refined
+Confidence: 8.5/10
+Weakness: aggregation vs composition terminology (de-emphasized for interviews)
+Notes: Computer has Cpu/Memory/Disk; boot load→compute→write; composition over multiple inheritance
 
-Day 3
-Topic: Abstraction + Interfaces
-Status: Completed
-Confidence: 9/10
-
-Day 2
-Status: Completed
-
-Day 1
-Status: Completed
+Day 4 — Completed (polymorphism)
+Day 3 — Completed (interfaces)
+Day 2 — Completed (encapsulation)
+Day 1 — Completed (classes)
 ```

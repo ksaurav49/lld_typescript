@@ -832,7 +832,7 @@ Try [`EXERCISE.md`](EXERCISE.md) yourself first. Answers live in the real TypeSc
 ```
 
    * Update `_sidebar.md` for that topic: ensure Notes / Exercise / Practice exist; under Practice, one bullet per file linking to the same GitHub `blob/main/...` URL.
-   * If the topic is new to the sidebar, add the full topic block (title → Notes, Exercise if present, Practice + files).
+   * If the topic is new to the sidebar, add the full topic block (title → Notes, Exercise if present, Practice + files) **under its phase**. Keep all five phases in `_sidebar.md` (collapsed groups); never drop later phases for a “Later phases” stub.
 4. Base URL for links: `https://github.com/ksaurav49/lld_typescript/blob/main/`
 5. Do **not** duplicate TypeScript into Markdown. Do **not** skip indexing when advancing past a completed exercise.
 

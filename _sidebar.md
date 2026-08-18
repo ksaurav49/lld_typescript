@@ -1,7 +1,7 @@
 * [Home](/)
 * [Curriculum](CURRICULUM.md)
 
-* Phase 1 — OOP
+* [Phase 1 — OOP](01-oop/README.md)
   * [Classes & Objects](01-oop/classes/NOTES.md)
     * [Notes](01-oop/classes/NOTES.md)
     * [Exercise](01-oop/classes/EXERCISE.md)
@@ -38,6 +38,42 @@
     * [Exercise](01-oop/composition/EXERCISE.md)
     * [Practice](01-oop/composition/PRACTICE.md)
       * [Computer.ts](https://github.com/ksaurav49/lld_typescript/blob/main/01-oop/composition/practice/Computer.ts)
+      * [Cpu.ts](https://github.com/ksaurav49/lld_typescript/blob/main/01-oop/composition/practice/Cpu.ts)
+      * [Memory.ts](https://github.com/ksaurav49/lld_typescript/blob/main/01-oop/composition/practice/Memory.ts)
+      * [Disk.ts](https://github.com/ksaurav49/lld_typescript/blob/main/01-oop/composition/practice/Disk.ts)
 
-* Later phases
-  * Follow [Curriculum](CURRICULUM.md) for SOLID, patterns, and problems as folders fill in.
+* [Phase 2 — SOLID](02-solid/README.md)
+  * [Single Responsibility](02-solid/single-responsibility/NOTES.md)
+    * [Notes](02-solid/single-responsibility/NOTES.md)
+    * [Exercise](02-solid/single-responsibility/EXERCISE.md)
+  * Open/Closed
+  * Liskov Substitution
+  * Interface Segregation
+  * Dependency Inversion
+
+* [Phase 3 — Design Patterns](03-design-patterns/README.md)
+  * Strategy
+  * Factory
+  * Observer
+  * Builder
+  * State
+  * Adapter
+  * Decorator
+  * Dependency Injection
+
+* [Phase 4 — LLD Problems](04-problems/README.md)
+  * Tic Tac Toe
+  * Library Management
+  * Vending Machine
+  * Parking Lot
+  * Logger
+  * ATM
+  * Elevator
+  * Splitwise
+  * Movie Ticket Booking
+  * Optional
+    * Chess
+    * Ride Sharing
+
+* [Phase 5 — NestJS Mapping](05-nestjs-mapping/README.md)
+  * NestJS mapping notes

@@ -33,4 +33,6 @@ This class changes if validation rules change, DB changes, *or* email copy chang
 
 ## Pitfalls / Interview notes
 
-*(Filled after review.)*
+- Splitting classes is not enough: **inject** collaborators via constructor params; `new` inside the service still hardwires creation.
+- If the validator returns a boolean, the orchestrator **must** check it (or have the validator throw) — otherwise invalid input still flows through.
+- Interview line: “multiple reasons to change” > “too many methods.”

@@ -15,11 +15,11 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 6 / 30
-Topic: SOLID — Single Responsibility Principle
-Path: 02-solid/single-responsibility/
+Day: 8 / 30
+Topic: SOLID — Liskov Substitution + Interface Segregation
+Path: 02-solid/liskov-substitution/ · 02-solid/interface-segregation/
 Status: Not started
-Resume at: Read NOTES.md → EXERCISE.md → practice/
+Resume at: Read NOTES.md → EXERCISE.md → practice/ (both topics)
 ```
 
 ---
@@ -27,6 +27,22 @@ Resume at: Read NOTES.md → EXERCISE.md → practice/
 ## Log
 
 ```text
+Day 7
+Topic: SOLID — Open/Closed Principle
+Path: 02-solid/open-closed/
+Status: Completed
+Confidence: 9/10
+Weakness: minor — FixedDiscount used −10 vs exercise −50; amount stored in calculator ctor
+Notes: Discount interface + Percentage/Fixed/No; inject into calculator; demo three types; OCP = don’t modify for new variants
+
+Day 6
+Topic: SOLID — Single Responsibility Principle
+Path: 02-solid/single-responsibility/
+Status: Completed
+Confidence: 9/10
+Weakness: initially hardwired new in ctor; briefly ignored boolean validation
+Notes: Split validator/repo/email; inject via ctor params; orchestrate validate→save→email; SRP = multiple reasons to change
+
 Day 5
 Topic: Composition
 Path: 01-oop/composition/

@@ -46,7 +46,20 @@
   * [Single Responsibility](02-solid/single-responsibility/NOTES.md)
     * [Notes](02-solid/single-responsibility/NOTES.md)
     * [Exercise](02-solid/single-responsibility/EXERCISE.md)
-  * Open/Closed
+    * [Practice](02-solid/single-responsibility/PRACTICE.md)
+      * [UserService.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/single-responsibility/practice/UserService.ts)
+      * [UserValidator.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/single-responsibility/practice/UserValidator.ts)
+      * [UserRepository.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/single-responsibility/practice/UserRepository.ts)
+      * [WelcomeEmailSender.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/single-responsibility/practice/WelcomeEmailSender.ts)
+  * [Open/Closed](02-solid/open-closed/NOTES.md)
+    * [Notes](02-solid/open-closed/NOTES.md)
+    * [Exercise](02-solid/open-closed/EXERCISE.md)
+    * [Practice](02-solid/open-closed/PRACTICE.md)
+      * [Discount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/Discount.ts)
+      * [PercentageDiscount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/PercentageDiscount.ts)
+      * [FixedDiscount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/FixedDiscount.ts)
+      * [NoDiscount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/NoDiscount.ts)
+      * [DiscountCalculator.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/DiscountCalculator.ts)
   * Liskov Substitution
   * Interface Segregation
   * Dependency Inversion

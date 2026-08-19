@@ -20,7 +20,7 @@ Track live position in [`PROGRESS.md`](./PROGRESS.md). Mark days done with `[x]`
 |-----|--------|------|------|
 | 6 | [Single Responsibility](./02-solid/single-responsibility/NOTES.md) | [`02-solid/single-responsibility/`](./02-solid/single-responsibility/NOTES.md) | [x] |
 | 7 | [Open/Closed](./02-solid/open-closed/NOTES.md) | [`02-solid/open-closed/`](./02-solid/open-closed/NOTES.md) | [x] |
-| 8 | [Liskov](./02-solid/liskov-substitution/NOTES.md) + [Interface Segregation](./02-solid/interface-segregation/NOTES.md) | [`02-solid/liskov-substitution/`](./02-solid/liskov-substitution/NOTES.md) · [`02-solid/interface-segregation/`](./02-solid/interface-segregation/NOTES.md) | [ ] |
+| 8 | [Liskov](./02-solid/liskov-substitution/NOTES.md) + [Interface Segregation](./02-solid/interface-segregation/NOTES.md) | [`02-solid/liskov-substitution/`](./02-solid/liskov-substitution/NOTES.md) · [`02-solid/interface-segregation/`](./02-solid/interface-segregation/NOTES.md) | [x] |
 | 9 | [Dependency Inversion](./02-solid/dependency-inversion/NOTES.md) + mixed refactor | [`02-solid/dependency-inversion/`](./02-solid/dependency-inversion/NOTES.md) | [ ] |
 
 ## Phase 3 — Design Patterns

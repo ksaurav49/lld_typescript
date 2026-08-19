@@ -60,9 +60,29 @@
       * [FixedDiscount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/FixedDiscount.ts)
       * [NoDiscount.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/NoDiscount.ts)
       * [DiscountCalculator.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/open-closed/practice/DiscountCalculator.ts)
-  * Liskov Substitution
-  * Interface Segregation
-  * Dependency Inversion
+  * [Liskov Substitution](02-solid/liskov-substitution/NOTES.md)
+    * [Notes](02-solid/liskov-substitution/NOTES.md)
+    * [Exercise](02-solid/liskov-substitution/EXERCISE.md)
+    * [Practice](02-solid/liskov-substitution/PRACTICE.md)
+      * [Bird.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/liskov-substitution/practice/Bird.ts)
+      * [Flyable.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/liskov-substitution/practice/Flyable.ts)
+      * [Penguin.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/liskov-substitution/practice/Penguin.ts)
+      * [Sparrow.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/liskov-substitution/practice/Sparrow.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/liskov-substitution/practice/Demo.ts)
+  * [Interface Segregation](02-solid/interface-segregation/NOTES.md)
+    * [Notes](02-solid/interface-segregation/NOTES.md)
+    * [Exercise](02-solid/interface-segregation/EXERCISE.md)
+    * [Practice](02-solid/interface-segregation/PRACTICE.md)
+      * [Workable.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/Workable.ts)
+      * [Eatable.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/Eatable.ts)
+      * [Sleepable.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/Sleepable.ts)
+      * [HumanWorker.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/HumanWorker.ts)
+      * [RobotWorker.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/RobotWorker.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/interface-segregation/practice/Demo.ts)
+  * [Dependency Inversion](02-solid/dependency-inversion/NOTES.md)
+    * [Notes](02-solid/dependency-inversion/NOTES.md)
+    * [Exercise](02-solid/dependency-inversion/EXERCISE.md)
+
 
 * [Phase 3 — Design Patterns](03-design-patterns/README.md)
   * Strategy

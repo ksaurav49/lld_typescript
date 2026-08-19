@@ -15,18 +15,27 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 8 / 30
-Topic: SOLID — Liskov Substitution + Interface Segregation
-Path: 02-solid/liskov-substitution/ · 02-solid/interface-segregation/
+Day: 9 / 30
+Topic: SOLID — Dependency Inversion + mixed refactor
+Path: 02-solid/dependency-inversion/
 Status: Not started
-Resume at: Read NOTES.md → EXERCISE.md → practice/ (both topics)
+Resume at: Read NOTES.md → EXERCISE.md → practice/ (Part A DIP, then Part B mixed)
 ```
+
 
 ---
 
 ## Log
 
 ```text
+Day 8
+Topic: SOLID — Liskov Substitution + Interface Segregation
+Path: 02-solid/liskov-substitution/ · 02-solid/interface-segregation/
+Status: Completed
+Confidence: 8.5/10 (LSP) · 9/10 (ISP)
+Weakness: LSP — Flyable as class first; demo omitted penguin path initially; ISP — client-side typed functions optional polish
+Notes: LSP — fly off Bird base; Flyable interface; migrate(Flyable); ISP — Workable/Eatable/Sleepable split; RobotWorker only Workable
+
 Day 7
 Topic: SOLID — Open/Closed Principle
 Path: 02-solid/open-closed/

@@ -82,11 +82,35 @@
   * [Dependency Inversion](02-solid/dependency-inversion/NOTES.md)
     * [Notes](02-solid/dependency-inversion/NOTES.md)
     * [Exercise](02-solid/dependency-inversion/EXERCISE.md)
-
+    * [Practice](02-solid/dependency-inversion/PRACTICE.md)
+      * [UserRepository.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/UserRepository.ts)
+      * [MySqlUserRepository.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/MySqlUserRepository.ts)
+      * [UserService.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/UserService.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/Demo.ts)
+      * [OrderDataFetcher.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/OrderDataFetcher.ts)
+      * [MySqlOrderFetcher.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/MySqlOrderFetcher.ts)
+      * [ReportFormatter.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/ReportFormatter.ts)
+      * [JsonFormatter.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/JsonFormatter.ts)
+      * [CsvFormatter.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/CsvFormatter.ts)
+      * [ReportSender.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/ReportSender.ts)
+      * [EmailReportSender.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/EmailReportSender.ts)
+      * [OrderReportService.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/OrderReportService.ts)
+      * [Demo.partB.ts](https://github.com/ksaurav49/lld_typescript/blob/main/02-solid/dependency-inversion/practice/Demo.partB.ts)
 
 * [Phase 3 — Design Patterns](03-design-patterns/README.md)
-  * Strategy
-  * Factory
+  * [Strategy](03-design-patterns/strategy/NOTES.md)
+    * [Notes](03-design-patterns/strategy/NOTES.md)
+    * [Exercise](03-design-patterns/strategy/EXERCISE.md)
+    * [Practice](03-design-patterns/strategy/PRACTICE.md)
+      * [PaymentStrategy.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/PaymentStrategy.ts)
+      * [CardPayment.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/CardPayment.ts)
+      * [UpiPayment.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/UpiPayment.ts)
+      * [WalletPayment.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/WalletPayment.ts)
+      * [Checkout.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/Checkout.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/strategy/practice/Demo.ts)
+  * [Factory](03-design-patterns/factory/NOTES.md)
+    * [Notes](03-design-patterns/factory/NOTES.md)
+    * [Exercise](03-design-patterns/factory/EXERCISE.md)
   * Observer
   * Builder
   * State

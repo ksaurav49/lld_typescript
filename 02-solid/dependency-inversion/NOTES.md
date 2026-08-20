@@ -82,3 +82,5 @@ Real “bad” code often violates **multiple** SOLID principles at once. On thi
 - DIP ≠ “use interfaces everywhere for one class.” Use when you have **variants** or **need to swap/test**.
 - `new ConcreteThing()` inside a service = smell for DIP (and often SRP).
 - Fixing DIP usually means: interface + constructor injection + thin orchestrator.
+- Part B: formatters are strategies in disguise — DIP wires them; OCP lets you add Xml without editing the orchestrator.
+- Use `export`/`import` in practice files so names like `UserService` don’t collide with other days under one `tsconfig`.

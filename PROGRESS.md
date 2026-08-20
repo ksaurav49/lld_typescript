@@ -15,19 +15,34 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 9 / 30
-Topic: SOLID — Dependency Inversion + mixed refactor
-Path: 02-solid/dependency-inversion/
+Day: 11 / 30
+Topic: Design Patterns — Factory
+Path: 03-design-patterns/factory/
 Status: Not started
-Resume at: Read NOTES.md → EXERCISE.md → practice/ (Part A DIP, then Part B mixed)
+Resume at: Read NOTES.md → EXERCISE.md → practice/
 ```
-
 
 ---
 
 ## Log
 
 ```text
+Day 10
+Topic: Design Patterns — Strategy
+Path: 03-design-patterns/strategy/
+Status: Completed
+Confidence: 9/10
+Weakness: initially forgot export Checkout + import in Demo; CardPayment import may still be missing
+Notes: PaymentStrategy + Card/UPI/Wallet; Checkout injects strategy; demo swaps methods; Strategy = interchangeable algorithm behind interface
+
+Day 9
+Topic: SOLID — Dependency Inversion + mixed refactor
+Path: 02-solid/dependency-inversion/
+Status: Completed
+Confidence: 8.5/10
+Weakness: Part A missing second repo (InMemory) dual demo; Part B was mentor-assisted
+Notes: Part A — UserRepository + ctor inject; Part B — fetcher/formatter/sender + OrderReportService; DIP = depend on abstractions
+
 Day 8
 Topic: SOLID — Liskov Substitution + Interface Segregation
 Path: 02-solid/liskov-substitution/ · 02-solid/interface-segregation/

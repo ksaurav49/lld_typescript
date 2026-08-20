@@ -15,11 +15,11 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 12 / 30
-Topic: Design Patterns — Observer
-Path: 03-design-patterns/observer/
+Day: 13 / 30
+Topic: Design Patterns — Builder + State
+Path: 03-design-patterns/builder/ · 03-design-patterns/state/
 Status: Not started
-Resume at: Read NOTES.md → EXERCISE.md → practice/
+Resume at: Builder first (NOTES → EXERCISE → practice/), then State
 ```
 
 ---
@@ -27,6 +27,14 @@ Resume at: Read NOTES.md → EXERCISE.md → practice/
 ## Log
 
 ```text
+Day 12
+Topic: Design Patterns — Observer
+Path: 03-design-patterns/observer/
+Status: Completed
+Confidence: 9/10
+Weakness: first demo missing unsubscribe + kept no observer refs; != vs !==
+Notes: Stock subject + Email/Sms observers; add/remove/notify; Stock depends only on Observer interface
+
 Day 11
 Topic: Design Patterns — Factory (+ Factory Method stretch)
 Path: 03-design-patterns/factory/

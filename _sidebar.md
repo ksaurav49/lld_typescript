@@ -120,8 +120,18 @@
   * [Observer](03-design-patterns/observer/NOTES.md)
     * [Notes](03-design-patterns/observer/NOTES.md)
     * [Exercise](03-design-patterns/observer/EXERCISE.md)
-  * Builder
-  * State
+    * [Practice](03-design-patterns/observer/PRACTICE.md)
+      * [Observer.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/observer/practice/Observer.ts)
+      * [EmailObserver.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/observer/practice/EmailObserver.ts)
+      * [SmsObserver.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/observer/practice/SmsObserver.ts)
+      * [Stock.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/observer/practice/Stock.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/observer/practice/Demo.ts)
+  * [Builder](03-design-patterns/builder/NOTES.md)
+    * [Notes](03-design-patterns/builder/NOTES.md)
+    * [Exercise](03-design-patterns/builder/EXERCISE.md)
+  * [State](03-design-patterns/state/NOTES.md)
+    * [Notes](03-design-patterns/state/NOTES.md)
+    * [Exercise](03-design-patterns/state/EXERCISE.md)
   * Adapter
   * Decorator
   * Dependency Injection

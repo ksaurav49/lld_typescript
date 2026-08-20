@@ -15,9 +15,9 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 11 / 30
-Topic: Design Patterns — Factory
-Path: 03-design-patterns/factory/
+Day: 12 / 30
+Topic: Design Patterns — Observer
+Path: 03-design-patterns/observer/
 Status: Not started
 Resume at: Read NOTES.md → EXERCISE.md → practice/
 ```
@@ -27,6 +27,14 @@ Resume at: Read NOTES.md → EXERCISE.md → practice/
 ## Log
 
 ```text
+Day 11
+Topic: Design Patterns — Factory (+ Factory Method stretch)
+Path: 03-design-patterns/factory/
+Status: Completed
+Confidence: 9/10 (simple factory) · 8/10 (Factory Method after clarification)
+Weakness: Demo class-body syntax; Factory Method concept needed plain explanation; missing imports on first FM attempt
+Notes: PaymentFactory.create(type); CheckoutFlow + Upi/Wallet subclasses; simple factory = string switch; FM = subclass createPayment
+
 Day 10
 Topic: Design Patterns — Strategy
 Path: 03-design-patterns/strategy/

@@ -111,7 +111,15 @@
   * [Factory](03-design-patterns/factory/NOTES.md)
     * [Notes](03-design-patterns/factory/NOTES.md)
     * [Exercise](03-design-patterns/factory/EXERCISE.md)
-  * Observer
+    * [Practice](03-design-patterns/factory/PRACTICE.md)
+      * [PaymentFactory.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/factory/practice/PaymentFactory.ts)
+      * [Demo.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/factory/practice/Demo.ts)
+      * [CheckoutFlow.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/factory/practice/CheckoutFlow.ts)
+      * [UpiCheckoutFlow.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/factory/practice/UpiCheckoutFlow.ts)
+      * [WalletCheckoutFlow.ts](https://github.com/ksaurav49/lld_typescript/blob/main/03-design-patterns/factory/practice/WalletCheckoutFlow.ts)
+  * [Observer](03-design-patterns/observer/NOTES.md)
+    * [Notes](03-design-patterns/observer/NOTES.md)
+    * [Exercise](03-design-patterns/observer/EXERCISE.md)
   * Builder
   * State
   * Adapter

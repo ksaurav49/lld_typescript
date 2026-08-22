@@ -2,72 +2,188 @@
 
 **Day 13b · Phase 3 — Design Patterns**
 
-## Problem
+## The clearest picture (read this twice)
 
-An object behaves differently based on **where it is in a lifecycle** — order status, document draft/published, vending machine idle/has-coin.
+Imagine an order is a **person standing in a room**.  
+The room is the **state**.
 
-Naive:
+```text
+        ┌─────────────┐
+        │   CREATED   │  ← order starts here
+        └──────┬──────┘
+               │ pay() succeeds
+               ▼
+        ┌─────────────┐
+        │    PAID     │
+        └──────┬──────┘
+               │ ship() succeeds
+               ▼
+        ┌─────────────┐
+        │   SHIPPED   │  ← end
+        └─────────────┘
+```
+
+**Rules of each room:**
+
+| Room (state) | If you try `pay()` | If you try `ship()` |
+|--------------|--------------------|---------------------|
+| CREATED | OK → walk to PAID | ❌ error |
+| PAID | ❌ error | OK → walk to SHIPPED |
+| SHIPPED | ❌ error | ❌ error |
+
+You always call the same thing on the order:
+
+```text
+order.pay()
+order.ship()
+```
+
+But **which room you’re in** decides what happens.
+
+That is the State pattern.
+
+---
+
+## Bad design (what you’re replacing)
+
+One variable `status = "created"` and lots of if/else:
 
 ```typescript
-class Order {
-  status = "created";
-
-  pay(): void {
-    if (this.status === "created") this.status = "paid";
-    else throw new Error("can't pay");
-  }
-  ship(): void {
-    if (this.status === "paid") this.status = "shipped";
-    else throw new Error("can't ship");
-  }
-  // more methods × more statuses = tangled if/else
+pay() {
+  if (status === "created") status = "paid";
+  else throw ...
+}
+ship() {
+  if (status === "paid") status = "shipped";
+  else throw ...
 }
 ```
 
-## Pattern idea
+**Problem:** every new status means editing every method. Hard to read.
 
-**State** = each status becomes a class implementing a shared interface. The context (`Order`) delegates actions to the **current state** object. States may transition the context to a new state.
+---
+
+## Good design (State) — same rules, different shape
+
+### 1) Order = the person (does not know the rules)
 
 ```text
-Order (context)
-  current: OrderState
-  pay() → current.pay(order)
-  ship() → current.ship(order)
+Order {
+  currentRoom: some State object
 
-CreatedState.pay → set PaidState
-PaidState.ship → set ShippedState
-ShippedState.pay → throw / no-op
+  pay()  →  ask currentRoom.pay(me)
+  ship() →  ask currentRoom.ship(me)
+  goTo(newRoom) → currentRoom = newRoom
+}
 ```
 
-## Mental model
+Order only says: “whatever room I’m in, handle `pay` / `ship`.”
 
-> “Replace status string + giant if/else with objects that each know what’s allowed.”
+### 2) Each room = one class
 
-## State vs Strategy (don’t confuse)
+```text
+CreatedState   = rules for CREATED room
+PaidState      = rules for PAID room
+ShippedState   = rules for SHIPPED room
+```
 
-| | **Strategy** | **State** |
-|--|--------------|-----------|
-| Intent | Swap algorithm | Change behavior with lifecycle |
-| Who switches? | Usually client / config | Often **the state itself** transitions |
-| Example | Payment method | Order created → paid → shipped |
+### 3) Interface = “every room must answer pay and ship”
 
-Same *shape* (interface + classes); different *intent*.
+```text
+OrderState {
+  pay(order)
+  ship(order)
+}
+```
 
-## When to use
+---
 
-- Clear finite set of states and transitions
-- Behavior differs a lot per state
-- if/else on `status` is spreading across methods
+## Exactly what happens (happy path)
 
-## When NOT to use
+```text
+1. new Order()
+      currentRoom = CreatedState
 
-- 2 simple statuses with tiny logic — an enum + a few guards is enough
-- No real transitions — maybe Strategy instead
+2. order.pay()
+      Order calls:  CreatedState.pay(order)
+      CreatedState: order.goTo(PaidState)     // walk to next room
+                    console.log("paid")
 
-## Interview lines
+3. order.ship()
+      Order calls:  PaidState.ship(order)     // different class!
+      PaidState:    order.goTo(ShippedState)
+                    console.log("shipped")
+```
 
-> "I'm using State because allowed operations depend on the current lifecycle stage."
+## Illegal path
 
-> "Each state class encapsulates transitions; Order just delegates."
+```text
+1. new Order()          → CreatedState
+2. order.ship()
+      CreatedState.ship → throw "cannot ship yet"
+      (stay in CREATED)
+```
 
-> "Unlike Strategy, states often change themselves as events happen."
+---
+
+## Files = rooms + person
+
+```text
+Order.ts          → the person (delegates)
+OrderState.ts     → “room must have pay + ship”
+CreatedState.ts   → CREATED room rules
+PaidState.ts      → PAID room rules
+ShippedState.ts   → SHIPPED room rules
+Demo.ts           → try happy path + illegal ship
+```
+
+---
+
+## One line vs Strategy
+
+| Pattern | Picture |
+|---------|---------|
+| **Strategy** | Pick a tool (Card/UPI). You choose the tool. |
+| **State** | Walk through rooms. The **room** decides what you’re allowed to do next. |
+
+---
+
+## What YOU should type (skeleton only)
+
+**OrderState.ts**
+
+```typescript
+pay(order: Order): void;
+ship(order: Order): void;
+```
+
+**Order.ts** — only this idea:
+
+```typescript
+pay()  { this.state.pay(this); }
+ship() { this.state.ship(this); }
+setState(next) { this.state = next; }
+// start: this.state = new CreatedState()
+```
+
+**CreatedState.ts** — only this idea:
+
+```typescript
+pay(order)  { order.setState(new PaidState()); console.log("paid"); }
+ship(order) { throw new Error("cannot ship"); }
+```
+
+**PaidState.ts** — only this idea:
+
+```typescript
+pay(order)  { throw new Error("already paid"); }
+ship(order) { order.setState(new ShippedState()); console.log("shipped"); }
+```
+
+Do **not** use a single `process()` method. Use `pay` and `ship`.
+
+---
+
+## Interview one-liner
+
+> "Instead of if/else on a status string, each status is a class. Order delegates pay/ship to the current state class, and that class may move the order to the next state."

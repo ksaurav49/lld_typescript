@@ -76,3 +76,7 @@ Use `export` / `import`. Watch circular imports: state files import `Order` type
 ## After you finish
 
 Say ready for review (Builder + State).
+
+---
+
+**Want more?** → [`EXERCISE-2.md`](./EXERCISE-2.md) — Media player (`practice-2/`). Same pattern, new domain.

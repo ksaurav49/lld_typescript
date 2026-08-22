@@ -30,7 +30,7 @@ Track live position in [`PROGRESS.md`](./PROGRESS.md). Mark days done with `[x]`
 | 10 | [Strategy](./03-design-patterns/strategy/NOTES.md) | [`03-design-patterns/strategy/`](./03-design-patterns/strategy/NOTES.md) | [x] |
 | 11 | [Factory](./03-design-patterns/factory/NOTES.md) | [`03-design-patterns/factory/`](./03-design-patterns/factory/NOTES.md) | [x] |
 | 12 | [Observer](./03-design-patterns/observer/NOTES.md) | [`03-design-patterns/observer/`](./03-design-patterns/observer/NOTES.md) | [x] |
-| 13 | [Builder](./03-design-patterns/builder/NOTES.md) + [State](./03-design-patterns/state/NOTES.md) | [`03-design-patterns/builder/`](./03-design-patterns/builder/NOTES.md) · [`03-design-patterns/state/`](./03-design-patterns/state/NOTES.md) | [ ] |
+| 13 | [Builder](./03-design-patterns/builder/NOTES.md) + [State](./03-design-patterns/state/NOTES.md) | [`03-design-patterns/builder/`](./03-design-patterns/builder/NOTES.md) · [`03-design-patterns/state/`](./03-design-patterns/state/NOTES.md) | [x] |
 | 14 | [Adapter](./03-design-patterns/adapter/NOTES.md), [Decorator](./03-design-patterns/decorator/NOTES.md), [DI](./03-design-patterns/dependency-injection/NOTES.md) | [`03-design-patterns/adapter/`](./03-design-patterns/adapter/NOTES.md) · [`03-design-patterns/decorator/`](./03-design-patterns/decorator/NOTES.md) · [`03-design-patterns/dependency-injection/`](./03-design-patterns/dependency-injection/NOTES.md) | [ ] |
 
 ## Phase 4 — LLD Problems

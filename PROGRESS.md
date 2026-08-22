@@ -15,11 +15,11 @@ Day index: [`CURRICULUM.md`](./CURRICULUM.md)
 ## Next session
 
 ```text
-Day: 13 / 30
-Topic: Design Patterns — Builder + State
-Path: 03-design-patterns/builder/ · 03-design-patterns/state/
+Day: 14 / 30
+Topic: Design Patterns — Adapter + Decorator + DI
+Path: 03-design-patterns/adapter/ · decorator/ · dependency-injection/
 Status: Not started
-Resume at: Builder first (NOTES → EXERCISE → practice/), then State
+Resume at: Adapter first (NOTES → EXERCISE → practice/), then Decorator, then DI
 ```
 
 ---
@@ -27,6 +27,14 @@ Resume at: Builder first (NOTES → EXERCISE → practice/), then State
 ## Log
 
 ```text
+Day 13
+Topic: Design Patterns — Builder + State
+Path: 03-design-patterns/builder/ · 03-design-patterns/state/
+Status: Completed
+Confidence: 9/10 (Builder) · 9/10 (State) · 9/10 (State practice-2)
+Weakness: State — first Player bypassed delegation; CreatedState.cancel initially wrong; Builder body type confusion
+Notes: Builder — HttpRequestBuilder + product; State — Order delegates; practice-2 Media player; context must call currentState.pay() not setState directly
+
 Day 12
 Topic: Design Patterns — Observer
 Path: 03-design-patterns/observer/
